@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Screen</title>
+  </head>
+  <body>
+    <div class="split-screen">
+      <div class="left">
+        <section class="copy">
+          <h1>Explore your creativity</h1>
+          <p>Over 1000 courses taught by real creatives.</p>
+        </section>
+      </div>
+      <div class="right">
+        <form id="login-form">
+          <section class="copy">
+            <h2>Login</h2>
+            <div class="login-container">
+              <p>
+                Don't have an account? <a href="#"><strong>Sign Up</strong></a>
+              </p>
+            </div>
+          </section>
+          <div class="input-container name">
+            <label for="username">User Name</label>
+            <input id="username" type="text" name="username" />
+            <div id="username-error" class="error">
+              Username must be at least 6 characters long and can contain
+              special characters.
+            </div>
+          </div>
+          <div class="input-container password">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Must be at least 6 characters"
+            />
+            <div id="password-error" class="error">
+              Password must be at least 6 characters long, contain at least one
+              uppercase letter, one lowercase letter, one digit, and one special
+              character.
+            </div>
+            <i id="toggle-password" class="fa fa-eye-slash"></i>
+          </div>
+          <div class="input-container cta">
+            <label class="checkbox-container">
+              <input type="checkbox" id="remember-me" />
+              <span class="checkmark"></span>
+              Remember me
+            </label>
+          </div>
+          <button id="login-btn" class="signup-btn" type="submit">Login</button>
+          <section class="copy legal">
+            <p>
+              <span class="small">
+                By continuing, you agree to accept our <br />
+                <a href="#">Privacy Policy</a> &amp;
+                <a href="#">Terms of Services</a>.</span
+              >
+            </p>
+          </section>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
