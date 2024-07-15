@@ -1,0 +1,5 @@
+Download the zip or clone it.
+
+After downloading launch VS Code and open the unzipped folder and run the project by installing a extension called Live Server and then press the Go live button. The Page will open in the browser
+
+I have added a functionality to see the password and also implemented the feature Remember Me(store user session in localStorage or sessionStorage).
